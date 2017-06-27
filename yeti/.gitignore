@@ -1,0 +1,17 @@
+*.swp
+*.py[co]
+build/
+_build
+dist/
+*.egg-info
+.project
+.pydevproject
+.settings
+*.db
+*.DS_Store
+output.txt
+.idea
+*.log
+# local dev files
+yeti/settings_local.py
+

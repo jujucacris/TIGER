@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <title>YETI</title>
+        <style type="text/css">
+            body {
+            	background-image:url('static/images/yeti_bg_0_40_150.png');
+				background-repeat:no-repeat;
+				background-attachment:fixed;
+				background-position:right; 
+                background-color: #F6F6F6;
+                font: 14px Helvetica, arial, freesans, clean, sans-serif;
+                line-height: 1.4;
+            }
+
+            a {
+                color: #4183c4;
+				text-decoration: none;
+		    }
+		    
+		    h1 {
+		      margin-bottom: 0em;
+		      font-size: 30px;
+		      line-height: 1.1;
+		    }
+		    
+		    h2 {
+		      margin-bottom: 0em;
+		      line-height: 1.1;
+		    }
+            
+            p {
+                margin-top:0.2em;
+            }
+            
+            div {
+                display: block;
+            }
+            
+            span {
+                white-space: nowrap;
+            }
+            
+           code, pre {
+				font-family: Consolas, "Liberation Mono", Courier, monospace;
+				font-size: 12px;
+				margin: 0 2px;
+				padding: 0px 5px;
+				border: 1px solid #ddd;
+				background-color: #f8f8f8;
+				border-radius: 3px;
+			}
+            
+            #main {
+                margin-top: 50px;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <div id="content">
+                <h1>YETI v2</h1>
+                <p>
+                    YETI is an implementation of the <a href="http://taxii.mitre.org">Trusted Automated eXchange of Indicator Information (TAXII)</a>.
+                </p>
+                <h1>Overview</h1>
+                <p>
+                    YETI is an implementation of TAXII. YETI was written in Python and utilizes the Django web application framework. YETI
+                    implements TAXII Services as defined by the <a href="http://taxii.mitre.org/specifications/version1.1/TAXII_Services_Specification.pdf">TAXII Services Specification</a>
+                    and the <a href="http://taxii.mitre.org/specifications/version1.0/http1.0/TAXII_HTTPProtocolBinding_Specification.pdf">TAXII HTTP Binding Specification</a>.
+                </p>
+                <h1>YETI v2.x vs YETI v1.x</h1>
+                <p>
+                    Both YETI v1.x releases ("old" YETI) and YETI v2.x releases ("new" YETI) implement TAXII. However,
+                    their purposes differ.
+
+                    "Old" YETI, YETI v1.x, was a simple demonstration of TAXII capabilities that included single-purpose TAXII
+                    Discovery, Poll, and Inbox Services. "Old" YETI only implemented the latest version of TAXII (rather
+                    than all version of TAXII), and did not have features that allowed it to be configurable/usable
+                    beyond it's purpose as a simple demonstration.
+
+                    "New" YETI, YETI v2.x, is significantly broader in scope and purpose than "Old" YETI.
+                    "New" YETI implements
+                    all of TAXII 1.1 and TAXII 1.0, and can be used as an operational prototype and TAXII test bed.
+                    "New" YETI has features that allow it to be configured, extended, and used. "New" YETI is powered
+                    by django-taxii-services.
+                </p>
+
+                <h1>Configuring YETI</h1>
+                <p>
+                    YETI has an admin interface located at <a href="/admin">/admin</a>. Here you can configure the TAXII
+                    Services available on this instance of YETI as well as the various aspects of the TAXII Services.
+
+                    Full YETI documentation is available on readthedocs: http://yeti.readthedocs.org/en/latest/. Note
+                    that this documentation can be downloaded for offline viewing.
+                </p>
+                <h1>Further Reading</h1>
+                <p>
+                    For more information about TAXII, please refer to the <a href="http://taxii.mitre.org">TAXII website.</a> For more information about YETI, refer to the 
+                    <a href="https://github.com/TAXIIProject/yeti/wiki">YETI wiki page.</a>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
